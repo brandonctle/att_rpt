@@ -1,0 +1,5 @@
+Discount_Code,Customer_ID,Date(MM/DD/YYYY),Discount(%),Amt_Bef_Discount($)
+123,0,02/02/2020,20,100
+234,1,03/02/2020,15,350
+456,0,02/01/2020,15,30
+123,2,04/01/2020,20,50
