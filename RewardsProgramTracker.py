@@ -1,9 +1,6 @@
 import csv
-from csv import DictReader
 import os
-import sys
-import operator
-import shutil
+import numpy
 
 def IsTask(num):
     try:
@@ -76,10 +73,17 @@ while not done:
     if task_num == 6:
         done = True
         print("Goodbye!")
+
+    if task_num == 1:
+        money_order = numpy.argsort(Money_Saved)
+        correct_money_order = money_order[::-1]
+        customer_order = []
+        print(correct_money_order)
+        for x in correct_money_order:
+            customer_order.append(Customer_ID[x])
+        print(customer_order)
+
 """
-    if task == 1:
-
-
     if task == 2:
 
 
@@ -91,7 +95,6 @@ while not done:
 
     if task == 5:
 """
-os.remove("demodata.csv")
 
 
 
